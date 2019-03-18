@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/roundedrectangle_spelldialogbackground">
+
+    <ImageView
+        android:id="@+id/spell_dialog_ImageView"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/spell_guardianangel_unclick"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/spell_dialog_spellNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        tools:text="@string/guardianangel"
+        android:textColor="@color/primary_orange"
+        android:textSize="@dimen/_22sdp"
+        app:layout_constraintBottom_toTopOf="@+id/spell_dialog_spellTypeTextView"
+        app:layout_constraintStart_toEndOf="@+id/spell_dialog_ImageView"
+        app:layout_constraintTop_toTopOf="@+id/spell_dialog_ImageView"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/spell_dialog_spellTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/passivespell"
+        android:textColor="#96FF9800"
+        android:textSize="@dimen/_18sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/spell_dialog_ImageView"
+        app:layout_constraintStart_toStartOf="@+id/spell_dialog_spellNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/spell_dialog_spellNameTextView" />
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/spell_dialog_spellTypeDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_30sdp"
+        android:paddingRight="@dimen/_30sdp"
+        tools:text="@string/typepassive_desc"
+        android:textColor="#cecece"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spell_dialog_ImageView" />
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/spell_dialog_spellMainDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="@string/spell_guardianangel_desc"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#b200B8D4"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spell_dialog_spellTypeDescription" />
+
+
+<!-- For either condition, or duration -->
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/spell_dialog_spellExtraDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/spell_guardian_desc_condition"
+        android:textColor="@color/white"
+        android:paddingLeft="@dimen/_30sdp"
+        android:paddingRight="@dimen/_30sdp"
+        android:textSize="@dimen/_15sdp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spell_dialog_spellMainDesc" />
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/spell_dialog_spellFlavorDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/spell_guardian_desc_flavor"
+        android:textColor="@color/primary_orange"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:textSize="@dimen/_15sdp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spell_dialog_spellExtraDesc" />
+
+    <!-- empty view to act as bottom space -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_25sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spell_dialog_spellFlavorDesc" />
+
+</android.support.constraint.ConstraintLayout>

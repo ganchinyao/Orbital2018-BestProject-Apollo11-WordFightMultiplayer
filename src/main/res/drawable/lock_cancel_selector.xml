@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Selected -->
+    <item android:drawable="@drawable/lock_canceldark" android:state_selected="true"/>
+
+    <!-- Pressed -->
+    <item android:drawable="@drawable/lock_canceldark" android:state_pressed="true"/>
+
+    <!-- Default -->
+    <item android:drawable="@drawable/lock_cancel" />
+</selector>

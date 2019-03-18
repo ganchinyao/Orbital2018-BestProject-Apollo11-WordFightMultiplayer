@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settingsmenubackground">
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/achievement_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/achievement_signin_desc"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/settings_linkaccountButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/achievement_title"
+        app:srcCompat="@drawable/multiplayer_signin_selector" />
+
+    <TextView
+        android:id="@+id/settings_linkaccountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/linkaccount"
+        android:textColor="@color/text_grey"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_linkaccountButton"
+        app:layout_constraintEnd_toEndOf="@+id/settings_linkaccountButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/settings_linkaccountImageView"
+        app:layout_constraintTop_toTopOf="@+id/settings_linkaccountButton" />
+
+    <ImageView
+        android:id="@+id/settings_linkaccountImageView"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_linkaccountButton"
+        app:layout_constraintEnd_toStartOf="@+id/settings_linkaccountTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/settings_linkaccountButton"
+        app:layout_constraintStart_toStartOf="@+id/settings_linkaccountButton"
+        app:layout_constraintTop_toTopOf="@+id/settings_linkaccountButton"
+        app:srcCompat="@drawable/googleg_standard_color_18" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_linkaccountButton"/>
+
+
+</android.support.constraint.ConstraintLayout>

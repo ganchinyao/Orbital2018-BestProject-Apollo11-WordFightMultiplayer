@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shop_overallLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96000000">
+
+
+    <ImageView
+        android:id="@+id/shop_hat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop"
+        app:layout_constraintBottom_toTopOf="@id/guidelineHatBottom"
+        app:srcCompat="@drawable/shophat" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineHatBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.32" />
+
+    <ImageView
+        android:id="@+id/shop_title"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_49sdp"
+        app:layout_constraintBottom_toTopOf="@+id/shop_hat"
+        app:layout_constraintEnd_toEndOf="@+id/shop_hat"
+        app:layout_constraintStart_toStartOf="@+id/shop_hat"
+        app:layout_constraintTop_toTopOf="@+id/shop_hat"
+        app:srcCompat="@drawable/shoptext" />
+
+    <ImageView
+        android:id="@+id/shop_closeButton"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/shop_title"
+        app:layout_constraintStart_toEndOf="@+id/shop_title"
+        app:layout_constraintTop_toTopOf="@+id/shop_title"
+        app:srcCompat="@drawable/menuclosebackground" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/shop_mainbodyLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/shopbottom"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+        app:layout_constraintEnd_toEndOf="@+id/shop_hat"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/shop_hat"
+        app:layout_constraintTop_toBottomOf="@+id/shop_hat"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <ImageView
+            android:id="@+id/shop_commonBackground"
+            android:layout_width="@dimen/_129sdp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineBottom2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/shopcommonbackground" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineBottom2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.58" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineHorizontal_50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.43" />
+
+        <ImageView
+            android:id="@+id/shop_nextRightArrow"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/shop_commonBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/shop_commonBackground"
+            app:layout_constraintTop_toTopOf="@+id/shop_commonBackground"
+            app:srcCompat="@drawable/shop_nextbackground_selector" />
+
+        <ImageView
+            android:id="@+id/shop_nextLeftArrow"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:rotation="180"
+            app:layout_constraintBottom_toBottomOf="@+id/shop_nextRightArrow"
+            app:layout_constraintEnd_toStartOf="@+id/shop_commonBackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/shop_nextRightArrow"
+            app:srcCompat="@drawable/shop_nextbackground_selector" />
+
+        <View
+            android:id="@+id/shop_page1Circle"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@drawable/shop_circle_clicked"
+            android:layout_marginTop="@dimen/_2sdp"
+            app:layout_constraintEnd_toStartOf="@+id/shop_page2Circle"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/shop_commonBackground"
+            app:layout_constraintTop_toTopOf="@+id/guidelineBottom2" />
+
+        <View
+            android:id="@+id/shop_page2Circle"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@drawable/shop_circle_unclick"
+            app:layout_constraintEnd_toStartOf="@+id/shop_page3Circle"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/shop_page1Circle"
+            app:layout_constraintTop_toTopOf="@+id/shop_page1Circle" />
+
+        <View
+            android:id="@+id/shop_page3Circle"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@drawable/shop_circle_unclick"
+            app:layout_constraintEnd_toStartOf="@+id/shop_page4Circle"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/shop_page2Circle"
+            app:layout_constraintTop_toTopOf="@+id/shop_page1Circle" />
+
+        <View
+            android:id="@+id/shop_page4Circle"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@drawable/shop_circle_unclick"
+            app:layout_constraintEnd_toEndOf="@+id/shop_commonBackground"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/shop_page3Circle"
+            app:layout_constraintTop_toTopOf="@+id/shop_page1Circle" />
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/shop_buynowButton"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/shop_buynow_selector"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:text="@string/buynow"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="@+id/shop_commonBackground"
+            app:layout_constraintStart_toStartOf="@+id/shop_commonBackground"
+            app:layout_constraintTop_toBottomOf="@+id/shop_page1Circle"
+            android:layout_marginTop="@dimen/_3sdp"/>
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/shop_priceTextView"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="20dp"
+            android:text="$0.99"
+            android:gravity="center|top"
+            android:textColor="#D81B60"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintEnd_toStartOf="@+id/shop_nextRightArrow"
+            app:layout_constraintStart_toEndOf="@+id/shop_nextLeftArrow"
+            app:layout_constraintTop_toTopOf="@+id/shop_commonBackground"
+            android:background="@drawable/pricebackground" />
+
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/shop_saleContentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/noads"
+            android:textColor="@color/bright_cyan"
+            android:textSize="@dimen/_26sdp"
+            app:layout_constraintTop_toBottomOf="@id/guidelineHorizontal_50"
+            app:layout_constraintEnd_toEndOf="@+id/shop_commonBackground"
+            app:layout_constraintStart_toStartOf="@+id/shop_commonBackground" />
+
+        <ImageView
+            android:id="@+id/shop_saleContentImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/shop_commonBackground"
+            app:layout_constraintStart_toStartOf="@+id/shop_commonBackground"
+            app:layout_constraintTop_toBottomOf="@+id/shop_priceTextView"
+            app:layout_constraintBottom_toTopOf="@id/guidelineHorizontal_50"
+            app:srcCompat="@drawable/noadsbackground" />
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/shop_restorePurchase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#c8ffffff"
+            android:text="@string/restorepurchase"
+            android:layout_marginTop="@dimen/_2sdp"
+            app:layout_constraintTop_toBottomOf="@id/shop_buynowButton"
+            app:layout_constraintStart_toStartOf="@id/shop_buynowButton"
+            app:layout_constraintEnd_toEndOf="@id/shop_buynowButton" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+</android.support.constraint.ConstraintLayout>

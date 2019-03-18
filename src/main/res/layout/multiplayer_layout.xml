@@ -1,0 +1,1679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popupscreenbackground"
+    tools:context=".OnePlayerPopup">
+
+    <!-- @@@@@@ popup selection @@@@@@@-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/multiplayer_popupSelection_overallLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/popup_difficultyImageView"
+            android:layout_width="@dimen/_113sdp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/difficultyicon"
+            app:layout_constraintBottom_toTopOf="@id/guidelineTop"/>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_20sdp"
+            android:text="@string/difficulty"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="@id/popup_difficultyImageView"
+            app:layout_constraintEnd_toEndOf="@id/popup_difficultyImageView"
+            app:layout_constraintStart_toStartOf="@id/popup_difficultyImageView"
+            app:layout_constraintTop_toTopOf="@id/popup_difficultyImageView" />
+
+        <View
+            android:id="@+id/popup_easyButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/difficultyframechecked"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toStartOf="@+id/popup_mediumButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/popup_difficultyImageView" />
+
+        <View
+            android:id="@+id/popup_mediumButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/difficultyframeuncheck"
+            app:layout_constraintBottom_toBottomOf="@+id/popup_easyButton"
+            app:layout_constraintEnd_toStartOf="@+id/popup_hardButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/popup_easyButton"
+            app:layout_constraintTop_toTopOf="@+id/popup_easyButton" />
+
+        <View
+            android:id="@+id/popup_hardButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/difficultyframeuncheck"
+            app:layout_constraintBottom_toBottomOf="@+id/popup_easyButton"
+            app:layout_constraintEnd_toStartOf="@+id/popup_insaneButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/popup_mediumButton"
+            app:layout_constraintTop_toTopOf="@+id/popup_easyButton" />
+
+        <View
+            android:id="@+id/popup_insaneButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/difficultyframeuncheck"
+            app:layout_constraintBottom_toBottomOf="@+id/popup_easyButton"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2a"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/popup_hardButton"
+            app:layout_constraintTop_toTopOf="@+id/popup_easyButton" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.03" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.97" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <ImageView
+            android:id="@+id/popup_easyImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_38sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="@+id/popup_easyButton"
+            app:layout_constraintStart_toStartOf="@+id/popup_easyButton"
+            app:layout_constraintTop_toTopOf="@+id/popup_easyButton"
+            app:srcCompat="@drawable/popup_difficultyeasyicon" />
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/popup_easyTextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center|top"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:text="@string/easy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            app:autoSizeMaxTextSize="@dimen/_18sdp"
+            app:autoSizeMinTextSize="@dimen/_8sdp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="@+id/popup_easyButton"
+            app:layout_constraintStart_toStartOf="@+id/popup_easyButton"
+            app:layout_constraintTop_toBottomOf="@+id/popup_easyImageView" />
+
+        <ImageView
+            android:id="@+id/popup_mediumImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_38sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="@+id/popup_mediumButton"
+            app:layout_constraintStart_toStartOf="@+id/popup_mediumButton"
+            app:layout_constraintTop_toTopOf="@+id/popup_mediumButton"
+            app:srcCompat="@drawable/popup_difficultymediumicon" />
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/popup_mediumTextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center|top"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:text="@string/medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            app:autoSizeMaxTextSize="@dimen/_18sdp"
+            app:autoSizeMinTextSize="@dimen/_8sdp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="@+id/popup_mediumButton"
+            app:layout_constraintStart_toStartOf="@+id/popup_mediumButton"
+            app:layout_constraintTop_toBottomOf="@+id/popup_mediumImageView" />
+
+        <ImageView
+            android:id="@+id/popup_hardImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_38sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="@+id/popup_hardButton"
+            app:layout_constraintStart_toStartOf="@+id/popup_hardButton"
+            app:layout_constraintTop_toTopOf="@+id/popup_hardButton"
+            app:srcCompat="@drawable/popup_difficultyhardicon" />
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/popup_hardTextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center|top"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:text="@string/hard"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            app:autoSizeMaxTextSize="@dimen/_18sdp"
+            app:autoSizeMinTextSize="@dimen/_8sdp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="@+id/popup_hardButton"
+            app:layout_constraintStart_toStartOf="@+id/popup_hardButton"
+            app:layout_constraintTop_toBottomOf="@+id/popup_hardImageView" />
+
+        <ImageView
+            android:id="@+id/popup_insaneImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_38sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="@+id/popup_insaneButton"
+            app:layout_constraintStart_toStartOf="@+id/popup_insaneButton"
+            app:layout_constraintTop_toTopOf="@+id/popup_insaneButton"
+            app:srcCompat="@drawable/popup_difficultyinsaneicon" />
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/popup_insaneTextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center|top"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:text="@string/insane"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            app:autoSizeMaxTextSize="@dimen/_18sdp"
+            app:autoSizeMinTextSize="@dimen/_8sdp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="@+id/popup_insaneButton"
+            app:layout_constraintStart_toStartOf="@+id/popup_insaneButton"
+            app:layout_constraintTop_toBottomOf="@+id/popup_insaneImageView" />
+
+
+        <View
+            android:id="@+id/categorybackgroundTop"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/categorybackground_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/popup_easyButton" />
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/popup_tablayout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="#00000000"
+            app:layout_constraintBottom_toTopOf="@id/categorybackgroundBottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextAppearance="@style/popup_tablayout"
+            app:tabTextColor="@color/verylight_gray">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabChats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/allcategories" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gamesetting" />
+
+
+        </android.support.design.widget.TabLayout>
+
+        <View
+            android:id="@+id/categorybackgroundBottom"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/categorybackground_bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/categorybackgroundTop" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/popup_viewPager"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            app:layout_constraintBottom_toTopOf="@+id/popup_startButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popup_tablayout" />
+
+        <ImageView
+            android:id="@+id/popup_startButton"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:alpha="0.5"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/playbutton_selector" />
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/popup_startTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_2sdp"
+            android:text="@string/ready"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/popup_startButton"
+            app:layout_constraintEnd_toEndOf="@+id/popup_startButton"
+            app:layout_constraintStart_toStartOf="@+id/popup_startButton"
+            app:layout_constraintTop_toTopOf="@+id/popup_startButton" />
+
+
+        <LinearLayout
+            android:id="@+id/multiplayer_playerIconLinearLayoutTop"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:gravity="right"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/popup_difficultyImageView"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/multiplayer_playerIconLinearLayoutBottom"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:gravity="right"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/popup_easyButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/popup_difficultyImageView">
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!---->
+    <!---->
+    <!---->
+    <!-- @@@@@ For multiplayer handshake connections @@@@@@@ -->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/multiplayer_handshake_overallLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/multiplayer_monsterBackground"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline5"
+            app:srcCompat="@drawable/multiplayerpopup" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <!-- multiplayer before signed in starts from here -->
+        <ImageView
+            android:id="@+id/multiplayer_signIn_Button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:scaleType="fitXY"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toEndOf="@+id/multiplayer_monsterBackground"
+            app:layout_constraintStart_toStartOf="@+id/multiplayer_monsterBackground"
+            app:layout_constraintTop_toBottomOf="@+id/signinHelpText"
+            app:layout_constraintVertical_bias="0.07999998"
+            app:srcCompat="@drawable/multiplayer_signin_selector" />
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/signinHelpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_50sdp"
+            android:paddingRight="@dimen/_50sdp"
+            android:text="@string/signinText"
+            android:textColor="#eeeeee"
+            android:textSize="@dimen/_13sdp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toEndOf="@id/multiplayer_monsterBackground"
+            app:layout_constraintStart_toStartOf="@+id/multiplayer_monsterBackground"
+            app:layout_constraintTop_toTopOf="@+id/guideline5"
+            app:layout_constraintVertical_bias="0.36" />
+
+        <TextView
+            android:id="@+id/signInTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="@string/signin"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/multiplayer_signIn_Button"
+            app:layout_constraintStart_toEndOf="@+id/googleIconImageView"
+            app:layout_constraintTop_toTopOf="@+id/multiplayer_signIn_Button" />
+
+        <ImageView
+            android:id="@+id/googleIconImageView"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/multiplayer_signIn_Button"
+            app:layout_constraintEnd_toEndOf="@+id/multiplayer_signIn_Button"
+            app:layout_constraintHorizontal_bias="0.29"
+            app:layout_constraintStart_toStartOf="@+id/multiplayer_signIn_Button"
+            app:layout_constraintTop_toTopOf="@+id/multiplayer_signIn_Button"
+            app:srcCompat="@drawable/googleg_standard_color_18" />
+
+        <!-- Multiplayer before signed in ends here-->
+
+
+        <ImageView
+            android:id="@+id/multiplayer_multiplayerversus"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.88"
+            app:srcCompat="@drawable/multiplayerversuslogo" />
+
+        <ProgressBar
+            android:id="@+id/multiplayer_waitscreenprogressbar"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:indeterminate="true"
+            android:theme="@style/waitscreenprogressbar"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/multiplayer_waitscreen_loadingTextView"
+            app:layout_constraintEnd_toEndOf="@id/multiplayer_monsterBackground"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/multiplayer_monsterBackground"
+            />
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/multiplayer_waitscreen_loadingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:textColor="@color/light_brown"
+            android:textSize="@dimen/_16sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/multiplayer_monsterBackground"
+            app:layout_constraintEnd_toEndOf="@id/multiplayer_monsterBackground"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintStart_toStartOf="@id/multiplayer_monsterBackground"
+            app:layout_constraintTop_toBottomOf="@+id/multiplayer_monsterBackground" />
+
+        <!-- Multiplayer signed in start from here-->
+        <ImageView
+            android:id="@+id/multiplayer_quickPlay_Button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_45sdp"
+            android:layout_marginRight="@dimen/_45sdp"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/multiplayer_inviteFriends_Button"
+            app:layout_constraintEnd_toEndOf="@+id/multiplayer_monsterBackground"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/multiplayer_monsterBackground"
+            app:layout_constraintTop_toBottomOf="@+id/guideline7"
+            app:layout_constraintVertical_bias="0.110000014"
+            app:srcCompat="@drawable/multiplayer_generalbutton_selector" />
+
+
+        <ImageView
+            android:id="@+id/multiplayer_inviteFriends_Button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_45sdp"
+            android:layout_marginRight="@dimen/_45sdp"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/multiplayer_seeInvitation_Button"
+            app:layout_constraintEnd_toEndOf="@+id/multiplayer_monsterBackground"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/multiplayer_monsterBackground"
+            app:layout_constraintTop_toBottomOf="@+id/multiplayer_quickPlay_Button"
+            app:srcCompat="@drawable/multiplayer_generalbutton_selector" />
+
+        <ImageView
+            android:id="@+id/multiplayer_seeInvitation_Button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_45sdp"
+            android:layout_marginRight="@dimen/_45sdp"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/multiplayer_signOut_Button"
+            app:layout_constraintEnd_toEndOf="@+id/multiplayer_monsterBackground"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/multiplayer_monsterBackground"
+            app:layout_constraintTop_toBottomOf="@+id/multiplayer_inviteFriends_Button"
+            app:srcCompat="@drawable/multiplayer_generalbutton_selector" />
+
+        <ImageView
+            android:id="@+id/multiplayer_signOut_Button"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/multiplayer_monsterBackground"
+            app:layout_constraintEnd_toEndOf="@+id/multiplayer_monsterBackground"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/multiplayer_monsterBackground"
+            app:layout_constraintTop_toBottomOf="@+id/multiplayer_seeInvitation_Button"
+            app:srcCompat="@drawable/multiplayer_signin_selector" />
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/multiplayer_signOutTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signout"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/_16sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/multiplayer_signOut_Button"
+            app:layout_constraintEnd_toEndOf="@+id/multiplayer_signOut_Button"
+            app:layout_constraintStart_toStartOf="@+id/multiplayer_signOut_Button"
+            app:layout_constraintTop_toTopOf="@+id/multiplayer_signOut_Button" />
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/multiplayer_quickPlayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/quickplay"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/multiplayer_quickPlayIcon"
+            app:layout_constraintStart_toEndOf="@+id/multiplayer_quickPlayIcon"
+            app:layout_constraintTop_toTopOf="@+id/multiplayer_quickPlayIcon" />
+
+        <ImageView
+            android:id="@+id/multiplayer_quickPlayIcon"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/multiplayer_quickPlay_Button"
+            app:layout_constraintEnd_toEndOf="@+id/multiplayer_quickPlay_Button"
+            app:layout_constraintHorizontal_bias="0.19"
+            app:layout_constraintStart_toStartOf="@+id/multiplayer_quickPlay_Button"
+            app:layout_constraintTop_toTopOf="@+id/multiplayer_quickPlay_Button"
+            app:srcCompat="@drawable/battle" />
+
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/multiplayer_inviteFriendsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/inviteFriends"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/multiplayer_inviteFriendHighFiveIcon"
+            app:layout_constraintStart_toEndOf="@+id/multiplayer_inviteFriendHighFiveIcon"
+            app:layout_constraintTop_toTopOf="@+id/multiplayer_inviteFriendHighFiveIcon" />
+
+        <ImageView
+            android:id="@+id/multiplayer_inviteFriendHighFiveIcon"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/multiplayer_inviteFriends_Button"
+            app:layout_constraintEnd_toEndOf="@+id/multiplayer_inviteFriends_Button"
+            app:layout_constraintHorizontal_bias="0.19"
+            app:layout_constraintStart_toStartOf="@+id/multiplayer_inviteFriends_Button"
+            app:layout_constraintTop_toTopOf="@+id/multiplayer_inviteFriends_Button"
+            app:srcCompat="@drawable/highfive" />
+
+        <ImageView
+            android:id="@+id/multiplayer_seeInvitationMailIcon"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/multiplayer_seeInvitation_Button"
+            app:layout_constraintEnd_toEndOf="@+id/multiplayer_seeInvitation_Button"
+            app:layout_constraintHorizontal_bias="0.19"
+            app:layout_constraintStart_toStartOf="@+id/multiplayer_seeInvitation_Button"
+            app:layout_constraintTop_toTopOf="@+id/multiplayer_seeInvitation_Button"
+            app:srcCompat="@drawable/mail" />
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/multiplayer_seeInvitationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/seeInvitation"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/multiplayer_seeInvitationMailIcon"
+            app:layout_constraintStart_toEndOf="@+id/multiplayer_seeInvitationMailIcon"
+            app:layout_constraintTop_toTopOf="@+id/multiplayer_seeInvitationMailIcon" />
+
+        <ImageView
+            android:id="@+id/multiplayer_backbutton"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_7sdp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backicon" />
+
+        <RelativeLayout
+            android:id="@+id/multiplayer_invitationRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:background="@color/primary_red"
+            android:visibility="gone">
+
+
+            <Button
+                android:id="@+id/multiplayer_invitationAcceptButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#00000000"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/accept"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sdp" />
+
+            <TextView
+                android:id="@+id/multiplayer_invitation_questionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/multiplayer_invitationAcceptButton"
+                android:gravity="center"
+                android:text="You have been invited by your friend. Click to accept now."
+                android:textColor="@color/verylight_gray"
+                android:textSize="@dimen/_14sdp" />
+        </RelativeLayout>
+
+        <!-- Multiplayer signed in ends here-->
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!-- @@@@@@@@@@@@@ Actual game content starts here @@@@@@@@@@@@@@@@@@@@@@@@-->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/multiplayer_actualGameOverallLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gamescreenbackground"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/game_streakimageview"
+            android:layout_width="@dimen/_87sdp"
+            android:layout_height="@dimen/_42sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_timeimageview"
+            app:layout_constraintEnd_toStartOf="@+id/game_timeimageview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/gamestreakbackground" />
+
+        <ImageView
+            android:id="@+id/game_scoreimageview"
+            android:layout_width="@dimen/_87sdp"
+            android:layout_height="@dimen/_42sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_timeimageview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/game_timeimageview"
+            app:srcCompat="@drawable/gamescorebackground" />
+
+        <ImageView
+            android:id="@+id/game_timeimageview"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/gametimerbackground" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide_framebottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.56" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_frametop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.21" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_frameleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.18" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_frameright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.82" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.67" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.99" />
+
+
+        <!-- @@@@@@@@@@@@@@@ Start of keyboard @@@@@@@@@@@@@@@@ -->
+
+        <TextView
+            android:id="@+id/button_q"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="q"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/button_a"
+            app:layout_constraintEnd_toStartOf="@+id/button_w"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline2"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+
+        <TextView
+            android:id="@+id/button_w"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="w"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_q"
+            app:layout_constraintEnd_toStartOf="@+id/button_e"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/button_q"
+            app:layout_constraintTop_toTopOf="@+id/button_q" />
+
+        <TextView
+            android:id="@+id/button_e"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="e"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_q"
+            app:layout_constraintEnd_toStartOf="@+id/button_r"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/button_w"
+            app:layout_constraintTop_toTopOf="@+id/button_q" />
+
+        <TextView
+            android:id="@+id/button_r"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="r"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_q"
+            app:layout_constraintEnd_toStartOf="@+id/button_t"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/button_e"
+            app:layout_constraintTop_toTopOf="@+id/button_q" />
+
+        <TextView
+            android:id="@+id/button_t"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="t"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_q"
+            app:layout_constraintEnd_toStartOf="@+id/button_y"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/button_r"
+            app:layout_constraintTop_toTopOf="@+id/button_q" />
+
+        <TextView
+            android:id="@+id/button_y"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="y"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_q"
+            app:layout_constraintEnd_toStartOf="@+id/button_u"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/button_t"
+            app:layout_constraintTop_toTopOf="@+id/button_q" />
+
+        <TextView
+            android:id="@+id/button_u"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="u"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_q"
+            app:layout_constraintEnd_toStartOf="@+id/button_i"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/button_y"
+            app:layout_constraintTop_toTopOf="@+id/button_q" />
+
+        <TextView
+            android:id="@+id/button_i"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="i"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_q"
+            app:layout_constraintEnd_toStartOf="@+id/button_o"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/button_u"
+            app:layout_constraintTop_toTopOf="@+id/button_q" />
+
+        <TextView
+            android:id="@+id/button_o"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="o"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_q"
+            app:layout_constraintEnd_toStartOf="@+id/button_p"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/button_i"
+            app:layout_constraintTop_toTopOf="@+id/button_q" />
+
+        <TextView
+            android:id="@+id/button_p"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="p"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_q"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/button_o"
+            app:layout_constraintTop_toTopOf="@+id/button_q" />
+
+        <TextView
+            android:id="@+id/button_a"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="a"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/button_z"
+            app:layout_constraintEnd_toStartOf="@+id/button_s"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_q" />
+
+        <TextView
+            android:id="@+id/button_s"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="s"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_a"
+            app:layout_constraintEnd_toStartOf="@+id/button_d"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_a"
+            app:layout_constraintTop_toTopOf="@+id/button_a" />
+
+        <TextView
+            android:id="@+id/button_d"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="d"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_a"
+            app:layout_constraintEnd_toStartOf="@+id/button_f"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_s"
+            app:layout_constraintTop_toTopOf="@+id/button_a" />
+
+        <TextView
+            android:id="@+id/button_f"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="f"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_a"
+            app:layout_constraintEnd_toStartOf="@+id/button_g"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_d"
+            app:layout_constraintTop_toTopOf="@+id/button_a" />
+
+        <TextView
+            android:id="@+id/button_g"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="g"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_a"
+            app:layout_constraintEnd_toStartOf="@+id/button_h"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_f"
+            app:layout_constraintTop_toTopOf="@+id/button_a" />
+
+        <TextView
+            android:id="@+id/button_h"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="h"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_a"
+            app:layout_constraintEnd_toStartOf="@+id/button_j"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_g"
+            app:layout_constraintTop_toTopOf="@+id/button_a" />
+
+        <TextView
+            android:id="@+id/button_j"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="j"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_a"
+            app:layout_constraintEnd_toStartOf="@+id/button_k"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_h"
+            app:layout_constraintTop_toTopOf="@+id/button_a" />
+
+        <TextView
+            android:id="@+id/button_k"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="k"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_a"
+            app:layout_constraintEnd_toStartOf="@+id/button_l"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_j"
+            app:layout_constraintTop_toTopOf="@+id/button_a" />
+
+        <TextView
+            android:id="@+id/button_l"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="l"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_a"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_k"
+            app:layout_constraintTop_toTopOf="@+id/button_a" />
+
+
+        <TextView
+            android:id="@+id/button_z"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="z"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/button_spacebar"
+            app:layout_constraintEnd_toStartOf="@+id/button_x"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/button_s"
+            app:layout_constraintTop_toBottomOf="@+id/button_a" />
+
+
+        <TextView
+            android:id="@+id/button_x"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="x"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_z"
+            app:layout_constraintEnd_toStartOf="@+id/button_c"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_z"
+            app:layout_constraintTop_toTopOf="@+id/button_z" />
+
+        <TextView
+            android:id="@+id/button_c"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="c"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_x"
+            app:layout_constraintEnd_toStartOf="@+id/button_v"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_x"
+            app:layout_constraintTop_toTopOf="@+id/button_x" />
+
+        <TextView
+            android:id="@+id/button_v"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="v"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_c"
+            app:layout_constraintEnd_toStartOf="@+id/button_b"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_c"
+            app:layout_constraintTop_toTopOf="@+id/button_c" />
+
+        <TextView
+            android:id="@+id/button_b"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="b"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_v"
+            app:layout_constraintEnd_toStartOf="@+id/button_n"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_v"
+            app:layout_constraintTop_toTopOf="@+id/button_v" />
+
+        <TextView
+            android:id="@+id/button_n"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="n"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_b"
+            app:layout_constraintEnd_toStartOf="@+id/button_m"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_b"
+            app:layout_constraintTop_toTopOf="@+id/button_b" />
+
+        <TextView
+            android:id="@+id/button_m"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_selector"
+            android:gravity="center"
+            android:text="m"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_n"
+            app:layout_constraintEnd_toEndOf="@+id/button_k"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_n"
+            app:layout_constraintTop_toTopOf="@+id/button_n" />
+
+        <TextView
+            android:id="@+id/button_spacebar"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/keyboard_background_space_selector"
+            android:gravity="center"
+            android:text="space"
+            android:textColor="@color/keyboard_color"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_z" />
+
+        <ImageView
+            android:id="@+id/button_backspace"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            app:layout_constraintBottom_toTopOf="@+id/button_spacebar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_m"
+            app:layout_constraintTop_toTopOf="@+id/button_z"
+            app:srcCompat="@drawable/keyboard_background_delete_selector" />
+
+        <!-- @@@@@@@@@@@@@@ End of keyboard @@@@@@@@@@@@@@@@@@@@@ -->
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/game_streakTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:gravity="center"
+            android:shadowColor="#FFD54F"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="0"
+            android:textColor="#FFA000"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_streakimageview"
+            app:layout_constraintEnd_toStartOf="@+id/game_timeimageview"
+            app:layout_constraintStart_toStartOf="@+id/game_streakimageview"
+            app:layout_constraintTop_toTopOf="@+id/game_streakimageview" />
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/game_scoreTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_22sdp"
+            android:shadowColor="#D7CCC8"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="0"
+            android:textColor="@color/brown"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_scoreimageview"
+            app:layout_constraintEnd_toEndOf="@+id/game_scoreimageview"
+            app:layout_constraintStart_toStartOf="@+id/game_scoreimageview"
+            app:layout_constraintTop_toTopOf="@+id/game_scoreimageview" />
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/game_timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="3:00"
+            android:textColor="@color/dark_brown"
+            android:textSize="@dimen/_30sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_timeimageview"
+            app:layout_constraintEnd_toEndOf="@+id/game_timeimageview"
+            app:layout_constraintStart_toStartOf="@+id/game_timeimageview"
+            app:layout_constraintTop_toTopOf="@+id/game_timeimageview" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/guide_framebottom"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_frameright"
+            app:layout_constraintStart_toStartOf="@+id/guideline_frameleft"
+            app:layout_constraintTop_toTopOf="@+id/guideline_frametop"
+            app:srcCompat="@drawable/gameframe" />
+
+        <HorizontalScrollView
+            android:id="@+id/game_historyHorizontalScrollView"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@drawable/gamehistorybackground"
+            android:paddingLeft="@dimen/_10sdp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_frametop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline_frameleft"
+            app:layout_constraintTop_toBottomOf="@+id/game_timeimageview">
+
+            <LinearLayout
+                android:id="@+id/game_historyLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/_10sdp" />
+        </HorizontalScrollView>
+
+        <ProgressBar
+            android:id="@+id/game_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:progress="0"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/game_editText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#00000000"
+            android:gravity="center|bottom"
+            android:hint="h"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_26sdp"
+            android:textStyle="bold"
+            android:inputType="textNoSuggestions"
+            app:layout_constraintBottom_toTopOf="@+id/game_progressbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guide_framebottom" />
+
+        <View
+            android:id="@+id/game_frameRectangle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/roundedrectangle_gameframerectangle"
+            app:layout_constraintBottom_toTopOf="@+id/game_editText"
+            app:layout_constraintEnd_toEndOf="@+id/imageView7"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+        <RelativeLayout
+            android:id="@+id/questionRelativeLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/game_frameRectangle"
+            app:layout_constraintEnd_toEndOf="@id/game_frameRectangle"
+            app:layout_constraintStart_toStartOf="@id/game_frameRectangle"
+            app:layout_constraintTop_toTopOf="@id/game_frameRectangle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/game_bookicon"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/bookicon" />
+
+
+                <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                    android:id="@+id/game_descriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/game_bookicon"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center|top"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:text="A flat piece of equipemehen e text here and add more words and words and some more words"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp"
+                    app:autoSizeMaxTextSize="@dimen/_16sdp"
+                    app:autoSizeMinTextSize="@dimen/_8sdp"
+                    app:autoSizeTextType="uniform" />
+            </RelativeLayout>
+
+            <!--<com.ganwl.multiplayerwordgame.helper.CustomTextView-->
+                <!--android:id="@+id/game_sourceTextView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/_20sdp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Source: Wiki"-->
+                <!--android:textColor="@color/light_gray"-->
+                <!--android:textSize="@dimen/_10sdp"-->
+                <!--android:layout_marginBottom="@dimen/_10sdp"-->
+                <!--app:autoSizeMaxTextSize="@dimen/_10sdp"-->
+                <!--app:autoSizeMinTextSize="@dimen/_6sdp"-->
+                <!--app:autoSizeTextType="uniform" />-->
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/spell1"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintBottom_toTopOf="@+id/spell2"
+            app:layout_constraintEnd_toStartOf="@id/guideline_frameleft"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_streakimageview"
+            app:srcCompat="@drawable/spell_guardianangel_selector" />
+
+        <ImageView
+            android:id="@+id/spell2"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintBottom_toTopOf="@+id/spell3"
+            app:layout_constraintEnd_toStartOf="@id/guideline_frameleft"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spell1"
+            app:srcCompat="@drawable/spell_seemore_selector" />
+
+        <ImageView
+            android:id="@+id/spell3"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintBottom_toTopOf="@+id/spell4"
+            app:layout_constraintEnd_toStartOf="@id/guideline_frameleft"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spell2"
+            app:srcCompat="@drawable/spell_reverse_selector" />
+
+        <ImageView
+            android:id="@+id/spell4"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintBottom_toTopOf="@+id/game_editText"
+            app:layout_constraintEnd_toStartOf="@id/guideline_frameleft"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spell3"
+            app:srcCompat="@drawable/spell_passiton_selector" />
+
+
+        <ImageView
+            android:id="@+id/game_dragoutButton"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_50sdp"
+            app:layout_constraintBottom_toTopOf="@+id/game_hintButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline_frametop"
+            app:srcCompat="@drawable/dragoutbutton_selector" />
+
+        <ImageView
+            android:id="@+id/game_hintButton"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            app:layout_constraintBottom_toTopOf="@+id/game_skipButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_dragoutButton"
+            app:srcCompat="@drawable/hintbutton_selector" />
+
+        <ImageView
+            android:id="@+id/game_skipButton"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            app:layout_constraintBottom_toTopOf="@+id/guide_framebottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_hintButton"
+            app:srcCompat="@drawable/skipbutton_selector" />
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5sdp"
+            android:shadowColor="@color/light_brown"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="@string/hint"
+            android:textColor="@color/dark_brown"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="@id/game_hintButton"
+            app:layout_constraintEnd_toEndOf="@id/game_hintButton"
+            app:layout_constraintStart_toStartOf="@id/game_hintButton"
+            app:layout_constraintTop_toTopOf="@id/game_hintButton" />
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5sdp"
+            android:shadowColor="#E91E63"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="@string/skip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="@id/game_skipButton"
+            app:layout_constraintEnd_toEndOf="@id/game_skipButton"
+            app:layout_constraintStart_toStartOf="@id/game_skipButton"
+            app:layout_constraintTop_toTopOf="@id/game_skipButton" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/multiplayer_slideoutOverallLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guidelineHalfVertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.35" />
+
+            <RelativeLayout
+                android:id="@+id/multiplayer_slideoutRelativeLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedrectangle_slideoutbackground"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guidelineHalfVertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <RelativeLayout
+                    android:id="@+id/multiplayer_slide_contentLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/multiplayer_slider_titleImageView"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/trophy"
+                        android:layout_marginTop="@dimen/_25sdp"/>
+
+                    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                        android:id="@+id/multiplayer_slider_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/multiplayer_slider_titleImageView"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="@string/currentposition"
+                        android:textColor="@color/primary_orange"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <LinearLayout
+                        android:id="@+id/multiplayer_slider_nameslinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/multiplayer_slider_title"
+                        android:gravity="center|top"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                    android:id="@+id/multiplayer_exit_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:text="@string/exit"
+                    android:textColor="@color/endgame_textcolor"
+                    android:textSize="@dimen/_18sdp"
+                    android:layout_below="@id/multiplayer_slide_contentLayout"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+
+            </RelativeLayout>
+
+            <!-- TODO maybe remove-->
+            <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                android:id="@+id/multiplayer_hexedword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hexed!"
+                android:textColor="@color/primary_red"
+                android:textSize="@dimen/_50sdp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

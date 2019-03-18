@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/roundedrectangle_pausebackground">
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/locked_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/locked"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_28sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <ImageView
+        android:id="@+id/locked_unlockImageView"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/tickicon"
+        app:layout_constraintTop_toBottomOf="@id/locked_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/lock_unlockedPaddingBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintTop_toBottomOf="@id/locked_unlockImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/locked_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/locked_description"
+        android:textColor="#dcffffff"
+        android:textSize="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/locked_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/locked_unlockButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unlock"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/white"
+        android:paddingLeft="@dimen/_25sdp"
+        android:paddingRight="@dimen/_25sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/locked_desc"
+        app:layout_constraintStart_toStartOf="@id/locked_desc"
+        app:layout_constraintEnd_toEndOf="@id/locked_desc"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/lock_tounlock_selector"
+        />
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/locked_cancelButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/primary_orange"
+        android:paddingLeft="@dimen/_25sdp"
+        android:paddingRight="@dimen/_25sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/locked_unlockButton"
+        app:layout_constraintStart_toStartOf="@id/locked_unlockButton"
+        app:layout_constraintEnd_toEndOf="@id/locked_unlockButton"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/lock_cancel_selector"
+        />
+
+    <!-- padding bottom -->
+    <View
+        android:id="@+id/lock_originalPaddingBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintTop_toBottomOf="@id/locked_cancelButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

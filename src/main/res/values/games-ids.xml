@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Google Play game services IDs.
+-->
+<resources>
+    <!-- app_id -->
+    <!-- TODO Add your own app_id -->
+    <string name="app_id" translatable="false">123456789012</string>
+    <!-- package_name -->
+    <string name="package_name" translatable="false">com.ganwl.multiplayerwordgame</string>
+    <!-- achievement Score 60 points -->
+    <string name="achievement_score_60_points" translatable="false">AbcdefgHi-JKLMNOPQ</string> <!-- TODO Create your own id from play console achievements page-->
+    <!-- achievement Score 100 points -->
+    <string name="achievement_score_100_points" translatable="false">AbcdefgHi-JKLMNOPQ</string> <!-- TODO Create your own id from play console achievements page-->
+    <!-- achievement Score 150 points -->
+    <string name="achievement_score_150_points" translatable="false">AbcdefgHi-JKLMNOPQ</string> <!-- TODO Create your own id from play console achievements page-->
+    <!-- achievement Score 200 points (MASTER) -->
+    <string name="achievement_score_200_points_master" translatable="false">AbcdefgHi-JKLMNOPQ</string> <!-- TODO Create your own id from play console achievements page-->
+    <!-- achievement Score 250 points (EXPERT) -->
+    <string name="achievement_score_250_points_expert" translatable="false">AbcdefgHi-JKLMNOPQ</string> <!-- TODO Create your own id from play console achievements page-->
+    <!-- achievement Score 300 points (INSANE) -->
+    <string name="achievement_score_300_points_insane" translatable="false">AbcdefgHi-JKLMNOPQ</string> <!-- TODO Create your own id from play console achievements page-->
+    <!-- achievement Get 4 Streaks -->
+    <string name="achievement_get_4_streaks" translatable="false">AbcdefgHi-JKLMNOPQ</string> <!-- TODO Create your own id from play console achievements page-->
+    <!-- achievement Get 6 Streaks -->
+    <string name="achievement_get_6_streaks" translatable="false">AbcdefgHi-JKLMNOPQ</string> <!-- TODO Create your own id from play console achievements page-->
+    <!-- achievement Get 8 Streaks (EXPERT) -->
+    <string name="achievement_get_8_streaks_expert" translatable="false">AbcdefgHi-JKLMNOPQ</string> <!-- TODO Create your own id from play console achievements page-->
+    <!-- achievement Get 10 Streaks (INSANE) -->
+    <string name="achievement_get_10_streaks_insane" translatable="false">AbcdefgHi-JKLMNOPQ</string> <!-- TODO Create your own id from play console achievements page-->
+    <!-- achievement No Skip -->
+    <string name="achievement_no_skip" translatable="false">AbcdefgHi-JKLMNOPQ</string> <!-- TODO Create your own id from play console achievements page-->
+    <!-- achievement Complete 10 times Single Player Mode -->
+    <string name="achievement_complete_10_times_single_player_mode" translatable="false">AbcdefgHi-JKLMNOPQ</string> <!-- TODO Create your own id from play console achievements page-->
+    <!-- achievement Complete 20 times Single Player Mode -->
+    <string name="achievement_complete_20_times_single_player_mode" translatable="false">AbcdefgHi-JKLMNOPQ</string> <!-- TODO Create your own id from play console achievements page-->
+    <!-- achievement Complete 50 times Single Player Mode -->
+    <string name="achievement_complete_50_times_single_player_mode" translatable="false">AbcdefgHi-JKLMNOPQ</string> <!-- TODO Create your own id from play console achievements page-->
+    <!-- achievement Complete 100 times Single Player Mode -->
+    <string name="achievement_complete_100_times_single_player_mode" translatable="false">AbcdefgHi-JKLMNOPQ</string> <!-- TODO Create your own id from play console achievements page-->
+    <!-- achievement Complete 10 times Multiplayer Mode -->
+    <string name="achievement_complete_10_times_multiplayer_mode" translatable="false">AbcdefgHi-JKLMNOPQ</string> <!-- TODO Create your own id from play console achievements page-->
+    <!-- achievement Complete 20 times Multiplayer Mode -->
+    <string name="achievement_complete_20_times_multiplayer_mode" translatable="false">AbcdefgHi-JKLMNOPQ</string> <!-- TODO Create your own id from play console achievements page-->
+    <!-- achievement Complete 50 times Multiplayer Mode -->
+    <string name="achievement_complete_50_times_multiplayer_mode" translatable="false">AbcdefgHi-JKLMNOPQ</string> <!-- TODO Create your own id from play console achievements page-->
+    <!-- achievement Complete 100 times Multiplayer Mode -->
+    <string name="achievement_complete_100_times_multiplayer_mode" translatable="false">AbcdefgHi-JKLMNOPQ</string> <!-- TODO Create your own id from play console achievements page-->
+</resources>

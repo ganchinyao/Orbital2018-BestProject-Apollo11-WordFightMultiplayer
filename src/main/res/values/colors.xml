@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="primary_pink">#f57aa3</color>
+    <color name="primary_yellow">#FFFF00</color>
+    <color name="primary_lightpink">#f8bbd0</color>
+    <color name="primary_teal">#39bfbd</color>
+    <color name="primary_blue">#28aff0</color>
+    <color name="primary_darkblue">#214885</color>
+    <color name="primary_orange">#FF9800</color>
+    <color name="primary_orange_light">#fbd196</color>
+    <color name="primary_green">#00E676</color>
+    <color name="primary_red">#F44336</color>
+    <color name="text_selected_red">#BF360C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="verylight_gray">#e6e6e6</color>
+    <color name="light_gray">#bdbdbd</color>
+    <color name="bright_cyan">#00d7da</color>
+    <color name="light_brown">#BCAAA4</color>
+    <color name="brown">#8D6E63</color>
+    <color name="dark_brown">#6D4C41</color>
+    <color name="keyboard_color">#ffffff</color>
+    <color name="translucent_white">#7Fffffff</color>
+    <color name="text_grey">#787878</color>
+    <color name="privacy_lightblack">#494949</color>
+</resources>

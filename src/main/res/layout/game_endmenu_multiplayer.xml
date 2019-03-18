@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/roundedrectangle_pausebackground">
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/pause_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/timeup"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_28sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/game_end_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/yourscore"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_halfvertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_end_rankingLinearLayout" />
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/game_end_higheststreak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/higheststreak"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_halfvertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_end_score" />
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/game_end_hintsused"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/hintsused"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_halfvertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_end_higheststreak" />
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/game_end_skips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/skips"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_halfvertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_end_hintsused" />
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/game_end_correctwords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/correctwords"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_halfvertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_end_skips" />
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/game_end_restartquery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/restartcolon"
+        android:textColor="@color/verylight_gray"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_halfvertical"
+        app:layout_constraintTop_toBottomOf="@+id/game_end_rankingLinearLayout" />
+
+    <!-- to be added programmatically-->
+    <LinearLayout
+        android:id="@+id/game_end_restartImageLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline_halfvertical"
+        app:layout_constraintTop_toBottomOf="@id/game_end_restartquery">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/game_end_restartImageLinearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_30sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline_halfvertical"
+        app:layout_constraintTop_toBottomOf="@id/game_end_restartImageLinearLayout">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/game_end_restartImageLinearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_30sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline_halfvertical"
+        app:layout_constraintTop_toBottomOf="@id/game_end_restartImageLinearLayout2">
+
+    </LinearLayout>
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/game_end_restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center|top"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:text="@string/restart"
+        android:textColor="@color/endgame_textcolor"
+        android:textSize="@dimen/_24sdp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_halfvertical"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_end_correctwords" />
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/game_end_exitButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_60sdp"
+        android:gravity="center|top"
+        android:paddingRight="@dimen/_20sdp"
+        android:text="@string/exit"
+        android:textColor="@color/endgame_textcolor"
+        android:textSize="@dimen/_24sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/game_end_restartButton" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_halfvertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/game_end_rankingImageView"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/game_end_myranking"
+        app:layout_constraintTop_toBottomOf="@+id/pause_title"
+        app:srcCompat="@drawable/trophy" />
+
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/game_end_myranking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:textColor="@color/primary_yellow"
+        android:textSize="@dimen/_40sdp"
+        app:layout_constraintBottom_toTopOf="@+id/game_end_rankingLinearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/game_end_rankingImageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="1st" />
+    <!-- to be populated programmatically-->
+    <LinearLayout
+        android:id="@+id/game_end_rankingLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_end_rankingImageView"
+        android:background="#b2F48FB1"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp">
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

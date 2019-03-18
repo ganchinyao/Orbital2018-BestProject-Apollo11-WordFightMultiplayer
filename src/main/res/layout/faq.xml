@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ececec">
+
+    <View
+        android:id="@+id/faq_topBar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/primary_darkblue"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/faq_backButton"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/backicon"
+        android:padding="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/faq_full"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp"
+        app:layout_constraintStart_toStartOf="@id/faq_topBar"
+        app:layout_constraintEnd_toEndOf="@id/faq_topBar"
+        app:layout_constraintTop_toTopOf="@id/faq_topBar"
+        app:layout_constraintBottom_toBottomOf="@id/faq_topBar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/faq_topBar"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- @@@@@@@@@@@@@@@@@@  -->
+            <RelativeLayout
+                android:id="@+id/faq_question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/faqbottomlineonlybackground">
+
+                <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                    android:id="@+id/faqtext1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_50sdp"
+                    android:text="@string/faq_qn1"
+                    android:gravity="center_vertical"
+                    android:paddingTop="@dimen/_20sdp"
+                    android:paddingBottom="@dimen/_20sdp"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/faq_qn1ImageView"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:src="@drawable/faqarrow_down"
+                    android:layout_alignBottom="@id/faqtext1"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_alignParentRight="true"/>
+
+
+            </RelativeLayout>
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/faq_answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:el_duration="500"
+                app:el_expanded="false"
+                app:el_parallax="0.5">
+
+                <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/faq_qn1_desc"
+                    android:background="@drawable/faqbottomlineonlybackground"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:textSize="@dimen/_14sdp"
+                    />
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+            <!-- @@@@@@@@@@@@@@@@@@  -->
+            <RelativeLayout
+                android:id="@+id/faq_question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/faqbottomlineonlybackground">
+
+                <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                    android:id="@+id/faqtext2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_50sdp"
+                    android:text="@string/faq_qn2"
+                    android:gravity="center_vertical"
+                    android:paddingTop="@dimen/_20sdp"
+                    android:paddingBottom="@dimen/_20sdp"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/faq_qn2ImageView"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:src="@drawable/faqarrow_down"
+                    android:layout_alignBottom="@id/faqtext2"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_alignParentRight="true"/>
+
+
+            </RelativeLayout>
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/faq_answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:el_duration="500"
+                app:el_expanded="false"
+                app:el_parallax="0.5">
+
+                <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/faq_qn2_desc"
+                    android:background="@drawable/faqbottomlineonlybackground"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:textSize="@dimen/_14sdp"
+                    />
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+            <!-- @@@@@@@@@@@@@@@@@@  -->
+            <RelativeLayout
+                android:id="@+id/faq_question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/faqbottomlineonlybackground">
+
+                <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                    android:id="@+id/faqtext3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_50sdp"
+                    android:text="@string/faq_qn3"
+                    android:gravity="center_vertical"
+                    android:paddingTop="@dimen/_20sdp"
+                    android:paddingBottom="@dimen/_20sdp"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/faq_qn3ImageView"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:src="@drawable/faqarrow_down"
+                    android:layout_alignBottom="@id/faqtext3"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_alignParentRight="true"/>
+
+
+            </RelativeLayout>
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/faq_answer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:el_duration="500"
+                app:el_expanded="false"
+                app:el_parallax="0.5">
+
+                <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/faq_qn3_desc"
+                    android:background="@drawable/faqbottomlineonlybackground"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:textSize="@dimen/_14sdp"
+                    />
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+            <!-- @@@@@@@@@@@@@@@@@@  -->
+            <RelativeLayout
+                android:id="@+id/faq_question4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/faqbottomlineonlybackground">
+
+                <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                    android:id="@+id/faqtext4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_50sdp"
+                    android:text="@string/faq_qn4"
+                    android:gravity="center_vertical"
+                    android:paddingTop="@dimen/_20sdp"
+                    android:paddingBottom="@dimen/_20sdp"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/faq_qn4ImageView"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:src="@drawable/faqarrow_down"
+                    android:layout_alignBottom="@id/faqtext4"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_alignParentRight="true"/>
+
+
+            </RelativeLayout>
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/faq_answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:el_duration="500"
+                app:el_expanded="false"
+                app:el_parallax="0.5">
+
+                <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/faq_qn4_desc"
+                    android:background="@drawable/faqbottomlineonlybackground"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:textSize="@dimen/_14sdp"
+                    />
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+            <!-- @@@@@@@@@@@@@@@@@@  -->
+            <RelativeLayout
+                android:id="@+id/faq_question5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/faqbottomlineonlybackground">
+
+                <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                    android:id="@+id/faqtext5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_50sdp"
+                    android:text="@string/faq_qn5"
+                    android:gravity="center_vertical"
+                    android:paddingTop="@dimen/_20sdp"
+                    android:paddingBottom="@dimen/_20sdp"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/faq_qn5ImageView"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:src="@drawable/faqarrow_down"
+                    android:layout_alignBottom="@id/faqtext5"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_alignParentRight="true"/>
+
+
+            </RelativeLayout>
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/faq_answer5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:el_duration="500"
+                app:el_expanded="false"
+                app:el_parallax="0.5">
+
+                <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/faq_qn5_desc"
+                    android:background="@drawable/faqbottomlineonlybackground"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:textSize="@dimen/_14sdp"
+                    />
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+            <!-- @@@@@@@@@@@@@@@@@@  -->
+            <RelativeLayout
+                android:id="@+id/faq_question6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/faqbottomlineonlybackground">
+
+                <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                    android:id="@+id/faqtext6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_50sdp"
+                    android:text="@string/faq_qn6"
+                    android:gravity="center_vertical"
+                    android:paddingTop="@dimen/_20sdp"
+                    android:paddingBottom="@dimen/_20sdp"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/faq_qn6ImageView"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:src="@drawable/faqarrow_down"
+                    android:layout_alignBottom="@id/faqtext6"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_alignParentRight="true"/>
+
+
+            </RelativeLayout>
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/faq_answer6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:el_duration="500"
+                app:el_expanded="false"
+                app:el_parallax="0.5">
+
+                <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/faq_qn6_desc"
+                    android:background="@drawable/faqbottomlineonlybackground"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:textSize="@dimen/_14sdp"
+                    />
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+            <!-- @@@@@@@@@@@@@@@@@@  -->
+            <RelativeLayout
+                android:id="@+id/faq_question7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/faqbottomlineonlybackground">
+
+                <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                    android:id="@+id/faqtext7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_50sdp"
+                    android:text="@string/faq_qn7"
+                    android:gravity="center_vertical"
+                    android:paddingTop="@dimen/_20sdp"
+                    android:paddingBottom="@dimen/_20sdp"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/faq_qn7ImageView"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:src="@drawable/faqarrow_down"
+                    android:layout_alignBottom="@id/faqtext7"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_alignParentRight="true"/>
+
+
+            </RelativeLayout>
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/faq_answer7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:el_duration="500"
+                app:el_expanded="false"
+                app:el_parallax="0.5">
+
+                <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/faq_qn7_desc"
+                    android:background="@drawable/faqbottomlineonlybackground"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:textSize="@dimen/_14sdp"
+                    />
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_80sdp"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/roundedrectangle_pausebackground">
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/pause_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu"
+        android:textColor="@color/primary_yellow"
+        android:textSize="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/pause_adsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Test Ad"
+        android:textColor="@color/primary_orange"
+        android:textSize="@dimen/_18sdp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pause_title" />
+
+    <com.facebook.ads.AdIconView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pause_adsTitle" />
+
+    <RelativeLayout
+        android:id="@+id/pause_adChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="@id/imageView"
+        app:layout_constraintBottom_toTopOf="@id/imageView"
+        android:layout_marginLeft="@dimen/_15sdp"/>
+
+    <TextView
+        android:id="@+id/pause_adLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/adflowericon"
+        android:padding="@dimen/_6sdp"
+        android:text="Ad"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/pause_adsCTAButton"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/shop_buynow_selector"
+        android:gravity="center"
+        android:text="Download Now"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp"
+        android:visibility="gone"
+        android:clickable="true"
+        app:autoSizeMaxTextSize="@dimen/_18sdp"
+        app:autoSizeMinTextSize="@dimen/_8sdp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/pause_resumeButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_60sdp"
+        android:gravity="center|top"
+        android:paddingLeft="@dimen/_10sdp"
+        android:text="@string/resume"
+        android:textColor="@color/pausemenu_textcolor"
+        android:textSize="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pause_adsCTAButton" />
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/pause_exitButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_60sdp"
+        android:gravity="center|top"
+        android:paddingRight="@dimen/_20sdp"
+        android:text="@string/exit"
+        android:textColor="@color/pausemenu_textcolor"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/pause_resumeButton" />
+
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+</android.support.constraint.ConstraintLayout>

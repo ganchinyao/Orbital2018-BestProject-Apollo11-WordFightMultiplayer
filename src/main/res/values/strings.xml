@@ -1,0 +1,238 @@
+<resources>
+    <string name="app_name">Word Fight Multiplayer</string>
+    <string name="app_version">Version 1.1.2</string>
+
+    <!-- Home Page-->
+    <string name="jewel_buy">Buy</string>
+    <string name="oneplayer">1 Player</string>
+    <string name="multiplayer">Multi-Player</string>
+
+    <!-- Settings Menu -->
+    <string name="sound">Sound</string>
+    <string name="yourname">Your Name:</string>
+    <string name="privacypolicy">Privacy Policy</string>
+    <string name="privacypolicy_parentsguide">Privacy Policy and Parents Guide</string>
+    <string name="faq">FAQ</string>
+    <string name="faq_full">Frequently Asked Questions</string>
+    <string name="linkaccount">Sign In</string>
+
+    <!-- Shop -->
+    <string name="buynow">Buy Now!</string>
+    <string name="noads">No Ads</string>
+    <string name="purchased">Purchased</string>
+    <string name="fiftyjewels">100 Jewels!</string>
+    <string name="threehundredjewels">300 Jewels!!</string>
+    <string name="ninehundredjewels">900 Jewels!!!</string>
+    <string name="restorepurchase">Restore your purchase</string>
+    <string name="successfullrestored">Successfully Restored!</string>
+    <string name="successfullypurchased">Successfully Purchased!</string>
+
+    <!-- Locked -->
+    <string name="locked">Locked</string>
+    <string name="locked_description">The current pack selected is locked. Unlock this pack for 200 Jewels?</string>
+    <string name="unlock">Unlock for 200 Jewels</string>
+    <string name="cancel">Cancel</string>
+    <string name="successfullyunlock">Successfully unlocked!</string>
+    <string name="restorepurchasednointernet">Unable to connect to Google Play Store. Please check your connection and try again.</string>
+    <string name="restorepurchasednopurchase">Your current Google Play Store account has no purchases.</string>
+
+
+    <!-- Popup -->
+    <string name="difficulty">Difficulty</string>
+    <string name="easy">EASY</string>
+    <string name="medium">MEDIUM</string>
+    <string name="hard">HARD</string>
+    <string name="insane">EXPANSION</string>
+    <string name="play">PLAY</string>
+    <string name="allcategories">Categories</string>
+    <string name="favorite">Favorites</string>
+    <string name="preferences">Preference</string>
+
+    <!-- Game Page -->
+    <string name="score">Score</string>
+    <string name="hint">Hint</string>
+    <string name="skip">Skip</string>
+    <string name="resume">Resume</string>
+    <string name="restart">Restart</string>
+    <string name="restartcolon">Restart: </string>
+    <string name="ranking">Ranking</string>
+    <string name="me">Me: </string>
+    <string name="gamepaused">Game Paused</string>
+    <string name="exit">Exit</string>
+    <string name="timeup">Times Up</string>
+    <string name="yourscore">Your Score: </string>
+    <string name="higheststreak">Highest Streak: </string>
+    <string name="hintsused">Hints Used: </string>
+    <string name="skips">Skips: </string>
+    <string name="correctwords">Correct Words: </string>
+
+    <!-- Multiplayer -->
+    <string name="signin">Sign In</string>
+    <string name="accept">Accept</string>
+    <string name="signout">Sign Out</string>
+    <string name="quickplay">Quick Play</string>
+    <string name="inviteFriends">Invite Friends</string>
+    <string name="seeInvitation">See Invitation</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="ready">Ready</string>
+    <string name="choosespell">Choose Spell</string>
+    <string name="duration">Duration: </string>
+    <string name="active">Active</string>
+    <string name="passive">Passive</string>
+    <string name="passivespell">Passive Spell</string>
+    <string name="typepassive_desc">Type Passive: Activated automatically whenever the condition is fulfilled. You cannot activate this spell manually.</string>
+    <string name="activespell">Active Spell</string>
+    <string name="typeactive_desc">Type Active: During battle, you must manually click this Spell to activate its effect. Each Active Spell can only be used once in the entire battle.</string>
+    <string name="seconds">seconds</string>
+    <string name="passiton">Throw</string>
+    <string name="tilt">Tilt</string>
+    <string name="jumble">Jumble</string>
+    <string name="hex">Hex</string>
+    <string name="seemore">See More</string>
+    <string name="reverse">Reverse</string>
+    <string name="block">Block</string>
+    <string name="guardianangel">Guardian Angel</string>
+    <string name="twotimesscore">2x Score</string>
+    <string name="choosespell_desc">Choose 4 spells to bring into battle</string>
+    <string name="gamesetting">Spells</string>
+    <string name="signinText">Multiplayer requires Google Play Game Service.\nPlease sign in to your Google Play Game Service account.</string>
+    <string name="currentposition">Current Position</string>
+    <string name="exittitle">Exit</string>
+    <string name="exitdialog">Are you sure you want to exit the game?</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="menu">Menu</string>
+    <string name="getready">Get Ready</string>
+    <string name="rematch">Rematch</string>
+    <string name="rematchgame_desc">Your opponent has requested for a rematch. Accept the challenge?</string>
+
+    <!-- Spell desc -->
+    <string name="spell_throw_desc">Sends your current word to your opponents and skips it, without breaking your streak. Your opponents will be guessing this word on their next question.</string>
+    <string name="spell_throw_desc_flavor">If I can’t give an answer, can you?</string>
+    <string name="spell_tilt_desc">Rotates your opponents\' words 90 degrees to the right.</string>
+    <string name="spell_tilt_desc_flavor">Is your head tilted or are you tilted?</string>
+    <string name="spell_jumble_desc">Jumbles your opponents\' words, while keeping the first and last alphabet of each word intact.</string>
+    <string name="spell_jumble_desc_flavor">If You Can Raed Tihs, You Msut Be Rlleay Srmat.</string>
+    <string name="spell_hex_desc">Hexes your opponents! For each word in the definition, there is a 50% chance that a letter in the word is replaced with the hex (#) key.</string>
+    <string name="spell_hex_desc_flavor">Wha#\’s Happ#ning to my s#ntences!</string>
+    <string name="spell_seemore_desc">Start off each question with the first 3 letters of the answer given. This spell has no effect if the answer has 3 or less letters. Affects only yourself.</string>
+    <string name="spell_seemore_desc_flavor">With the power of the Eye, nothing can stop me from scoring consecutively!</string>
+    <string name="spell_reverse_desc">Reverses a Spell targeted at you back at the caster.</string>
+    <string name="spell_reverse_desc_flavor">Ha! Back to you! Have a taste of your own medicine!</string>
+    <string name="spell_block_desc">Prevents anyone from casting any Active Spell. Passive spells will remain in effect.</string>
+    <string name="spell_block_desc_flavor">Cloud nine. Peace!</string>
+    <string name="spell_guardianangel_desc">Negate any Spell targeted at you.</string>
+    <string name="spell_guardian_desc_flavor">See no evil, hear no evil!</string>
+    <string name="spell_guardian_desc_condition">Condition: After you have been targeted by 2 Spells consecutively, the next Spell targeted at you is negated.</string>
+    <string name="spell_twotimesexp_desc">Any scores that your gained will be doubled. Affects you only.</string>
+    <string name="spell_twotimesexp_desc_flavor">Two times the scores, two times the fun!</string>
+    <string name="spell_twotimesexp_desc_condition">Condition: Activated only if you are currently in the last place.</string>
+
+    <!-- Help screen -->
+    <string name="help_page1_title">Single Player</string>
+    <string name="help_page1_desc">Guess the word correctly and score points!</string>
+    <string name="help_page2_title">Streaks</string>
+    <string name="help_page2_desc">The higher the Streaks, the more points you earn! Score Streaks by consecutively answering correctly.</string>
+    <string name="help_page3_title">Hints and Skips</string>
+    <string name="help_page3_desc">Using Hint will halved the score earned if you answered correctly. Skip will break your Streak and proceed to next question.</string>
+    <string name="help_page4_title">Multiplayer</string>
+    <string name="help_page4_desc">Play with up to 8 Players in Multiplayer Mode</string>
+    <string name="help_page5_title">Spells (Multiplayer Only)</string>
+    <string name="help_page5_desc">Cast spells to gain advantages or cause disruptions to opponents. Spells only affect those whose current position is higher than you.</string>
+    <string name="help_page6_title">Unlock Packs</string>
+    <string name="help_page6_desc">Collect Jewels and unlock interesting Packs! Challenge your friends with the newly unlocked Packs.</string>
+    <string name="help_page7_title">Play now!</string>
+    <string name="help_page7_desc">Start playing the game and learn some interesting words and facts along the way!</string>
+
+    <!-- Achievements -->
+    <string name="achievement_signin_desc">Sign in to your Google Play Game Service account to view Achievements</string>
+    <string name="jewelsearned">Jewels earned!</string>
+    <string name="jewelsearned_desc">Successfully achieved:</string>
+
+    <string name="privacy_text">We use Firebase Analytics by Google, which may collect information that may include, but not limited to, user\'s date of install,
+        frequency of use, functionality of app used, country, etc, for used in the following circumstances:
+        \n\nTo have a better understanding of user\'s demographic
+        \nTo better enhance the current product by understanding user\'s origin and functionality of app used
+        \n\nWe use Fabric Crashlytics by Google to collect Crash Reports from users when the app crashed.
+        The Crash Report sent to us may include your device model, Android Version, and the part of the code where the crash occurs.
+        No part of this Crash Reports can directly identify an individual personally.</string>
+
+    <!-- faq -->
+    <string name="faq_qn1">Is this game available on iOS?</string>
+    <string name="faq_qn1_desc">This game is currently only available on Android. We have no plan for an iOS release yet.</string>
+    <string name="faq_qn2">Is purchasing Remove Ads permanent?</string>
+    <string name="faq_qn2_desc">Yes. You will have permanent access to Remove Ads feature upon purchase, even if you change phone. As long as you use the same Google account, you can click on \"Restore your Purchase\" in the Shop, and have your previous purchase restored.</string>
+    <string name="faq_qn3">I have purchased the Remove Ads, but it was not reflected.</string>
+    <string name="faq_qn3_desc">This can happen if you delete the game and reinstall it, or install it on another device. In any case, you can always click on \"Restore your purchase\" and have your previous purchase restored, as long as you are using the same Google account. If this does not work, try to reinstall the app, and click on \"Restore your purchase\" again in the Shop.</string>
+    <string name="faq_qn4">How do I save my progress?</string>
+    <string name="faq_qn4_desc">Sign in to your Google Play Game Service account to automatically store your progress. Your Jewels and the Packs unlocked will all be link to your Google account.</string>
+    <string name="faq_qn5">Is this game available offline?</string>
+    <string name="faq_qn5_desc">You can play Single Player Mode offline. However, an internet connection is required to play Multiplayer Mode.</string>
+    <string name="faq_qn6">Is this game available in other languages?</string>
+    <string name="faq_qn6_desc">Currently, only English language is supported.</string>
+    <string name="faq_qn7">I used a spell, but it is not working?</string>
+    <string name="faq_qn7_desc">Spells only target those players whose scores are higher than you. For players whose scores are lower than you, your spell will not affect them.</string>
+
+
+    <!-- parents guide -->
+    <string name="parentsguide_text1">We require all users who downloaded and use this app to be above the age of 13. This is to be in line with COPPA and policies from third
+        party network such as Facebook Audience Network and Google Admob when serving Ads, as well as Firebase Analytics from Google which may collect information from users.</string>
+    <string name="parentsguide_text2">How can I manage or turn off In-app-purchase?</string>
+    <string name="parentsguide_text3">This game is free to download and play, but contains In-app-purchases:\n\n\t\t-Remove Ads\n\t\t-Purchasing Jewels\n\nThese
+        purchases are never required to play the game, but can be used to enhance the gameplay. In-app-purchase are paid for with real money, and are always
+        labeled as such. You can easily manage the ability to make in-app-purchase, adjust password protection settings, or disable in-app-purchase entirely. To do so,
+        open Google Playstore on your device, and go to \'User controls\' section in the Playstore Settings page. This can prevent your child from making unintentional in-app-purchase.</string>
+    <string name="parentsguide_text4">Who processes the In-app-purchase transactions?</string>
+    <string name="parentsguide_text5">We do not handle the In-app-purchase transactions. The payment transactions themselves are completed through Google Play via
+        your personal email address associated with that account. Receipts for these transactions are emailed to you by Google.\n\nTherefore, we do not have
+        access to any of your personal and credit card information, as the transaction are completed through Google Play.</string>
+    <string name="parentsguide_text6">Need help?</string>
+    <string name="parentsguide_text7">We are here to help! You can read through our FAQ page which answers some of the frequently asked questions. For
+        further assistance, you can contact us at contact@ninebitstudio.com. We will be happy to hear from you!</string>
+
+
+    <!-- Test multiplayer -->
+    <string name="game_title">Button Clicker 2000!</string>
+    <string name="game_blurb">A sample game that tests your ability to click a button. Can you click faster than your friends? Only one way to find out! To play this game with friends, you must sign in with Google.</string>
+    <string name="single_player">Single Player</string>
+    <string name="single_player_explanation">Get some practice!</string>
+    <string name="quick_game">Quick game</string>
+    <string name="invite_players">Invite friends</string>
+    <string name="see_invitations">See invitations</string>
+    <string name="quick_game_explanation">Challenge a random opponent.</string>
+    <string name="invite_players_explanation">Invite friends to play a game.</string>
+    <string name="see_invitations_explanation">See who is inviting you right now.</string>
+    <string name="inv_popup_text">Incoming invitation!</string>
+    <string name="accept_popup_invite">Accept!</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="please_wait">Please wait&#8230;</string>
+    <string name="instructions">Click the button as fast as you can!</string>
+    <string name="game_problem">An error occurred while starting the game. Please try again.</string>
+    <string name="click_me">Click me!</string>
+    <string name="is_inviting_you">is challenging you to a game!</string>
+    <string name="signin_other_error">There was an issue with sign in. Please try again later.</string>
+    <string name="status_exception_error">%1$s (status %2$d). %3$s.</string>
+
+    <string name="status_multiplayer_error_not_trusted_tester">Anyone you invite must be a trusted tester</string>
+    <string name="match_error_already_rematched">This rematch has already been started!</string>
+    <string name="client_reconnect_required">Games client reconnect required</string>
+    <string name="network_error_operation_failed">Network error: Operation failed</string>
+    <string name="internal_error">Internal error</string>
+    <string name="unexpected_status">Unexpected status: %1$s</string>
+    <string name="match_error_inactive_match">This match is inactive.</string>
+    <string name='match_error_locally_modified'>This match has locally-modified data.  This operation cannot be performed until the match is sent to the server.</string>
+    <string name="score_label">%1$s - Me</string>
+
+    <string name="select_conflicted_game">Select state to sign in</string>
+    <string name="format_days_ago">%d days ago</string>
+    <string name="format_hours_ago">%d hours ago</string>
+    <string name="format_minutes_ago">%d minutes ago</string>
+    <string name="format_seconds_ago">%d seconds ago</string>
+    <string name="moments_ago">moments ago</string>
+    <string name="snapshotimage_description">Saved image for snapshot</string>
+    <string name="write_snapshot_error">There was a problem writing the snapshot!</string>
+    <string name="error_opening_metadata">There was a problem opening the snapshot metadata!</string>
+    <string name="error_opening_filename">There was a problem opening the current save file!</string>
+    <string name="error_closing_metadata">There was a problem waiting for the snapshot metadata to close!</string>
+    <string name="error_closing_filename">There was a problem waiting for the current save file to close!</string>
+</resources>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ececec">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <View
+        android:id="@+id/policy_topBar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/primary_darkblue"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/policy_backButton"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/backicon"
+        android:padding="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/privacypolicy_parentsguide"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_17sdp"
+        app:layout_constraintStart_toStartOf="@id/policy_topBar"
+        app:layout_constraintEnd_toEndOf="@id/policy_topBar"
+        app:layout_constraintTop_toTopOf="@id/policy_topBar"
+        app:layout_constraintBottom_toBottomOf="@id/policy_topBar"/>
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/policy_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_14sdp"
+        android:text="Your Privacy is important to us!"
+        android:textColor="@color/privacy_lightblack"
+        app:layout_constraintTop_toBottomOf="@id/policy_topBar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"/>
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/policy_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_18sdp"
+        android:text="Personal Information"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/policy_text1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/policy_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_13sdp"
+        android:text="We do not collect any personal information that could identify you and hence, we do not disclose any of your personal information. Exception includes when you contact us by email. Please read 'Information you provide' section below."
+        android:textColor="@color/privacy_lightblack"
+        app:layout_constraintTop_toBottomOf="@id/policy_text2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_10sdp"/>
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/policy_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_18sdp"
+        android:text="Cookies"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/policy_text3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/policy_text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_13sdp"
+        android:text="We do not use cookies ourselves. Hence, no information on your part is stored by us. However, third party Ads Network may use cookies to deliver interest-based Ads to you."
+        android:textColor="@color/privacy_lightblack"
+        app:layout_constraintTop_toBottomOf="@id/policy_text4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_10sdp"/>
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/policy_text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_18sdp"
+        android:text="Other Information"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/policy_text5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/policy_text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_13sdp"
+        android:text="@string/privacy_text"
+        android:textColor="@color/privacy_lightblack"
+        app:layout_constraintTop_toBottomOf="@id/policy_text6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_10sdp"/>
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/policy_text8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_18sdp"
+        android:text="Advertisement"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/policy_text7"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/policy_text9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_13sdp"
+        android:text="We show the Ads provided by global network partners such as 'Google Admob' and 'Facebook Audience Network'.
+
+The third party providers may collect information from your part in which we have no control over. Information may include but not limited to your gender, country of origin, age, likes and dislikes etc, so as to serve you more relevant ads."
+        android:textColor="@color/privacy_lightblack"
+        app:layout_constraintTop_toBottomOf="@id/policy_text8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_10sdp"/>
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/policy_text10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_18sdp"
+        android:text="Information you provide"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/policy_text9"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <com.ganwl.multiplayerwordgame.helper.CustomTextView
+        android:id="@+id/policy_text11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_13sdp"
+        android:text="If you contact us for support or to give feedback, we may obtain and maintain any information you choose to provide, including your name, email addresses, attachment (if any), contact info as well as information about your mobile devices or other digital devices. We will use this information only to improve our product as well as to address the issue that you mentioned, and not share it with third parties unless required by law.
+
+By emailing us, you agree that you are above the age of 13 and consent to us storing your email records in our database. In the event you are below the age of 18, you agree that the email you sent to us are vetted and given permission by your legal parent or guardian, and that they understood that email and information you provided may be stored in our database for reference purposes."
+        android:textColor="@color/privacy_lightblack"
+        app:layout_constraintTop_toBottomOf="@id/policy_text10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_10sdp"/>
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/policy_text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_18sdp"
+            android:text="Parents Guide"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/policy_text11"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"/>
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/policy_text13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:text="@string/parentsguide_text1"
+            android:textColor="@color/privacy_lightblack"
+            app:layout_constraintTop_toBottomOf="@id/policy_text12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_10sdp"/>
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/policy_text14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_18sdp"
+            android:text="@string/parentsguide_text2"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/policy_text13"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/policy_text15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:text="@string/parentsguide_text3"
+            android:textColor="@color/privacy_lightblack"
+            app:layout_constraintTop_toBottomOf="@id/policy_text14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_10sdp"/>
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/policy_text16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_18sdp"
+            android:text="@string/parentsguide_text4"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/policy_text15"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/policy_text17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:text="@string/parentsguide_text5"
+            android:textColor="@color/privacy_lightblack"
+            app:layout_constraintTop_toBottomOf="@id/policy_text16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_10sdp"/>
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/policy_text18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_18sdp"
+            android:text="@string/parentsguide_text6"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/policy_text17"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <com.ganwl.multiplayerwordgame.helper.CustomTextView
+            android:id="@+id/policy_text19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:text="@string/parentsguide_text7"
+            android:textColor="@color/privacy_lightblack"
+            app:layout_constraintTop_toBottomOf="@id/policy_text18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_20sdp"
+            android:paddingRight="@dimen/_10sdp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

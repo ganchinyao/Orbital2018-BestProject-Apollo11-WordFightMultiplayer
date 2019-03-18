@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#00000000">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                android:id="@+id/multiplayer_gamesettings_choosespellTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="@string/choosespell"
+                android:textColor="@color/primary_darkblue"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                android:id="@+id/customTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/choosespell_desc"
+                android:textColor="#b2214885"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/multiplayer_gamesettings_choosespellTextView" />
+
+            <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                android:id="@+id/customTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/active"
+                android:textColor="@color/primary_darkblue"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="@+id/multiplayer_gamesettings_choosespellTextView"
+                app:layout_constraintStart_toStartOf="@+id/multiplayer_gamesettings_choosespellTextView"
+                app:layout_constraintTop_toBottomOf="@+id/customTextView" />
+
+            <ImageView
+                android:id="@+id/multiplayer_settings_passItOnSpell_ImageView"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:alpha="0.3"
+                app:layout_constraintEnd_toStartOf="@+id/multiplayer_settings_tiltSpell_ImageView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/customTextView2"
+                app:srcCompat="@drawable/spell_passiton_unclick" />
+
+            <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                android:id="@+id/multiplayer_settings_passItOnSpell_TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.3"
+                android:gravity="center"
+                android:text="@string/passiton"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="@+id/multiplayer_settings_passItOnSpell_ImageView"
+                app:layout_constraintStart_toStartOf="@+id/multiplayer_settings_passItOnSpell_ImageView"
+                app:layout_constraintTop_toBottomOf="@+id/multiplayer_settings_passItOnSpell_ImageView" />
+
+
+            <ImageView
+                android:id="@+id/multiplayer_settings_tiltSpell_ImageView"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:alpha="0.3"
+                app:layout_constraintEnd_toStartOf="@+id/multiplayer_settings_jumbleSpell_ImageView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/multiplayer_settings_passItOnSpell_ImageView"
+                app:layout_constraintTop_toTopOf="@+id/multiplayer_settings_passItOnSpell_ImageView"
+                app:srcCompat="@drawable/spell_tilt_unclick" />
+
+            <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                android:id="@+id/multiplayer_settings_tiltSpell_TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.3"
+                android:gravity="center"
+                android:text="@string/tilt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="@+id/multiplayer_settings_tiltSpell_ImageView"
+                app:layout_constraintStart_toStartOf="@+id/multiplayer_settings_tiltSpell_ImageView"
+                app:layout_constraintTop_toBottomOf="@+id/multiplayer_settings_tiltSpell_ImageView" />
+
+            <ImageView
+                android:id="@+id/multiplayer_settings_jumbleSpell_ImageView"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:alpha="0.3"
+                app:layout_constraintEnd_toStartOf="@+id/multiplayer_settings_hexSpell_ImageView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/multiplayer_settings_tiltSpell_ImageView"
+                app:layout_constraintTop_toTopOf="@+id/multiplayer_settings_tiltSpell_ImageView"
+                app:srcCompat="@drawable/spell_jumble_unclick" />
+
+            <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                android:id="@+id/multiplayer_settings_jumbleSpell_TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.3"
+                android:gravity="center"
+                android:text="@string/jumble"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="@+id/multiplayer_settings_jumbleSpell_ImageView"
+                app:layout_constraintStart_toStartOf="@+id/multiplayer_settings_jumbleSpell_ImageView"
+                app:layout_constraintTop_toBottomOf="@+id/multiplayer_settings_jumbleSpell_ImageView" />
+
+            <ImageView
+                android:id="@+id/multiplayer_settings_hexSpell_ImageView"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:alpha="0.3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/multiplayer_settings_jumbleSpell_ImageView"
+                app:layout_constraintTop_toTopOf="@+id/multiplayer_settings_jumbleSpell_ImageView"
+                app:srcCompat="@drawable/spell_hex_unclick" />
+
+            <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                android:id="@+id/multiplayer_settings_hexSpell_TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.3"
+                android:gravity="center"
+                android:text="@string/hex"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="@+id/multiplayer_settings_hexSpell_ImageView"
+                app:layout_constraintStart_toStartOf="@+id/multiplayer_settings_hexSpell_ImageView"
+                app:layout_constraintTop_toBottomOf="@+id/multiplayer_settings_hexSpell_ImageView" />
+
+            <ImageView
+                android:id="@+id/multiplayer_settings_seeMoreSpell_ImageView"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:alpha="0.3"
+                app:layout_constraintEnd_toStartOf="@+id/multiplayer_settings_reverseSpell_ImageView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/multiplayer_settings_passItOnSpell_TextView"
+                app:srcCompat="@drawable/spell_seemore_unclick" />
+
+
+            <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                android:id="@+id/multiplayer_settings_seeMoreSpell_TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.3"
+                android:gravity="center"
+                android:text="@string/seemore"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="@+id/multiplayer_settings_seeMoreSpell_ImageView"
+                app:layout_constraintStart_toStartOf="@+id/multiplayer_settings_seeMoreSpell_ImageView"
+                app:layout_constraintTop_toBottomOf="@+id/multiplayer_settings_seeMoreSpell_ImageView" />
+
+            <ImageView
+                android:id="@+id/multiplayer_settings_reverseSpell_ImageView"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:alpha="0.3"
+                app:layout_constraintEnd_toStartOf="@+id/multiplayer_settings_blockSpell_ImageView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/multiplayer_settings_seeMoreSpell_ImageView"
+                app:layout_constraintTop_toTopOf="@+id/multiplayer_settings_seeMoreSpell_ImageView"
+                app:srcCompat="@drawable/spell_reverse_unclick" />
+
+
+            <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                android:id="@+id/multiplayer_settings_reverseSpell_TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.3"
+                android:gravity="center"
+                android:text="@string/reverse"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="@+id/multiplayer_settings_reverseSpell_ImageView"
+                app:layout_constraintStart_toStartOf="@+id/multiplayer_settings_reverseSpell_ImageView"
+                app:layout_constraintTop_toBottomOf="@+id/multiplayer_settings_reverseSpell_ImageView" />
+
+            <ImageView
+                android:id="@+id/multiplayer_settings_blockSpell_ImageView"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:alpha="0.3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/multiplayer_settings_reverseSpell_ImageView"
+                app:layout_constraintTop_toTopOf="@+id/multiplayer_settings_reverseSpell_ImageView"
+                app:srcCompat="@drawable/spell_blockspell_unclick" />
+
+
+            <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                android:id="@+id/multiplayer_settings_blockSpell_TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.3"
+                android:gravity="center"
+                android:text="@string/block"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="@+id/multiplayer_settings_blockSpell_ImageView"
+                app:layout_constraintStart_toStartOf="@+id/multiplayer_settings_blockSpell_ImageView"
+                app:layout_constraintTop_toBottomOf="@+id/multiplayer_settings_blockSpell_ImageView" />
+
+            <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                android:id="@+id/passiveTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/passive"
+                android:textColor="@color/primary_darkblue"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="@+id/customTextView2"
+                app:layout_constraintStart_toStartOf="@+id/customTextView2"
+                app:layout_constraintTop_toBottomOf="@+id/multiplayer_settings_seeMoreSpell_TextView" />
+
+
+            <ImageView
+                android:id="@+id/multiplayer_settings_guardianAngelSpell_ImageView"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:alpha="0.3"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@+id/multiplayer_settings_2xSpell_ImageView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passiveTextView"
+                app:srcCompat="@drawable/spell_guardianangel_unclick" />
+
+
+            <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                android:id="@+id/multiplayer_settings_guardianAngelSpell_TextView"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:alpha="0.3"
+                android:gravity="center"
+                android:text="@string/guardianangel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="@+id/multiplayer_settings_guardianAngelSpell_ImageView"
+                app:layout_constraintStart_toStartOf="@+id/multiplayer_settings_guardianAngelSpell_ImageView"
+                app:layout_constraintTop_toBottomOf="@+id/multiplayer_settings_guardianAngelSpell_ImageView" />
+
+            <ImageView
+                android:id="@+id/multiplayer_settings_2xSpell_ImageView"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:alpha="0.3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/multiplayer_settings_guardianAngelSpell_ImageView"
+                app:layout_constraintTop_toTopOf="@+id/multiplayer_settings_guardianAngelSpell_ImageView"
+                app:srcCompat="@drawable/spell_twotimesscore_unclick" />
+
+
+            <com.ganwl.multiplayerwordgame.helper.CustomTextView
+                android:id="@+id/multiplayer_settings_2xSpell_TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.3"
+                android:gravity="center"
+                android:text="@string/twotimesscore"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="@+id/multiplayer_settings_2xSpell_ImageView"
+                app:layout_constraintStart_toStartOf="@+id/multiplayer_settings_2xSpell_ImageView"
+                app:layout_constraintTop_toBottomOf="@+id/multiplayer_settings_2xSpell_ImageView" />
+
+            <!-- empty view to have margin at bottom-->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_25sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/multiplayer_settings_guardianAngelSpell_TextView" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
