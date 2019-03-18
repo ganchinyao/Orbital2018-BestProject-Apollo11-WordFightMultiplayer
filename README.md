@@ -11,7 +11,7 @@ NUS School of Computing Orbital Best Project (Apollo 11, Advanced Level) 2018.
 
 ## About
 * NUS School of Computing Orbital Programme is a self-directed, independent project work for freshmen to participate during the Summer holiday from May - August each year. For more information about the programme, visit https://orbital.comp.nus.edu.sg/
-* Word Fight Multiplayer Game was an Orbital Project done by myself and my team mate Lim Wai Lun.
+* Team members: Gan Chin Yao, Lim Wai Lun.
 * This is a fully functional Android Real-time Multiplayer Word Game. Check it out at https://play.google.com/store/apps/details?id=com.ganwl.multiplayerwordgame&hl=en
 * This project won the **Best Project (Apollo 11, Advanced Level)** out of 400+ participants in the Orbital Programme 2018.
 
@@ -45,4 +45,5 @@ NUS School of Computing Orbital Best Project (Apollo 11, Advanced Level) 2018.
 * For game to launch without crashing: Update `app_id` in `games-ids.xml` from your Google Play Console
 
 ## Note
-* This app will NOT be updated anymore
+* This app will NOT be updated anymore.
+* In-App-Purchase was disabled for the actual Play Store application. However, the source code here includes a fully-functional In-App-Purchase capability.
